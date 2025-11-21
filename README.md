@@ -39,12 +39,12 @@ Trabalhar com elementos visuais e design utilizando CSS3, explorando sistemas de
 - [x] **3.7** Aplicar outros estilos tipográficos (font-style, text-decoration, text-transform)
 
 ### 4. Backgrounds
-- [ ] **4.1** Aplicar `background-color` em diferentes elementos
-- [ ] **4.2** Adicionar `background-image` usando URLs de imagens
-- [ ] **4.3** Controlar o tamanho da imagem de fundo com `background-size` (cover, contain, valores específicos)
-- [ ] **4.4** Posicionar imagens de fundo com `background-position` (center, top, bottom, left, right)
-- [ ] **4.5** Usar `background-repeat` (no-repeat, repeat-x, repeat-y)
-- [ ] **4.6** Combinar múltiplas propriedades de background
+- [X] **4.1** Aplicar `background-color` em diferentes elementos
+- [X] **4.2** Adicionar `background-image` usando URLs de imagens
+- [X] **4.3** Controlar o tamanho da imagem de fundo com `background-size` (cover, contain, valores específicos)
+- [X] **4.4** Posicionar imagens de fundo com `background-position` (center, top, bottom, left, right)
+- [X] **4.5** Usar `background-repeat` (no-repeat, repeat-x, repeat-y)
+- [X] **4.6** Combinar múltiplas propriedades de background
 
 ### 5. Gradientes CSS
 - [ ] **5.1** Criar um gradiente linear com 2 cores (`linear-gradient`)

@@ -236,5 +236,90 @@ a:hover {
     text-decoration: none;   /* útil para links */
 }
 
+/* Container Layout para Backgrounds */
+.exemplo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
 
+/* estilo-base para os cards background */
+.card-gb-demo {
+    min-height: 200px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra-card);
+    text-align: center;
+    color: var(--cor-neutra-clara);
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
 
+/* Backgound-color simples */
+.bg-cor {
+    background-color: var(--cor-terciaria);
+}
+
+/* background-image e background-repeat */
+.bg-imagem {
+    background-image: url('https://picsum.photos/50');
+    background-repeat: repeat;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-neutra-texto);
+}
+
+/* background-size: cover e position */
+.bg-cover {
+    background-image: url('https://picsum.photos/400/250');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*background-size: contain e position: bottom */
+.bg-contain {
+    background-image: url('https://picsum.photos/400/250');
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: var(--cor-neutra-fundo);
+    color: var(--cor-neutra-texto)
+}
+
+/* background Position Showcase */
+.posicao-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.pos-item {
+    min-height: 100px;
+    background-image: url('https://picsum.photos/50'); 
+    background-repeat: no-repeat;
+    background-color: #ecf0f1;
+    border: 1px dashed #95a5a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Posições específicas */
+.bg-pos-center { background-position: center; } 
+.bg-pos-top { background-position: top; }
+.bg-pos-bottom { background-position: bottom; }
+.bg-pos-left { background-position: left; }
+.bg-pos-right { background-position: right; }
+
+/* Exemplo de shorthand (background: color url repeat position / size) */
+.bg-shorthand {
+    background: var(--cor-primaria) url('https://picsum.photos/100') no-repeat fixed center / 100px 100px;
+    min-height: 200px;
+    margin-top: 2rem;
+    text-align: center;
+    color: var(--cor-neutra-clara);
+}
