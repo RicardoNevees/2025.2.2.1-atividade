@@ -106,7 +106,7 @@ a:hover {
 .card {
     background-color: var(--cor-neutra-clara);
     padding: 1.5rem;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: var(--sombra-card);
     text-align: center;
     min-height: 120px;
@@ -146,6 +146,35 @@ a:hover {
     color: var(--cor-neutra-texto);
 }
 
+.paleta-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cor-item {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-neutra-texto);
+    font-weight: bold;
+    box-shadow: var(--sombra-card);
+}
+
+/*Paleta de cores */
+.cor-primaria { background-color: blue;}
+.cor-secundaria { background-color: #00ff00;}
+.cor-terciaria { background-color: rgb(46, 204, 113);} 
+.cor-acento {background-color: rgba(255, 0, 0, 0.5);}
+.cor-neutra {
+    background-color: var(--cor-neutra-fundo);
+    color: var(--cor-neutra-texto);
+    border: 1px solid #2e0a0a;
+}
 
 
 
