@@ -54,12 +54,12 @@ Trabalhar com elementos visuais e design utilizando CSS3, explorando sistemas de
 - [x] **5.5** Experimentar com gradientes complexos e múltiplas paradas de cor
 
 ### 6. Integração e Finalização
-- [ ] **6.1** Criar uma página HTML completa aplicando todos os conceitos
-- [ ] **6.2** Garantir que o código HTML seja válido e semântico
-- [ ] **6.3** Garantir que o CSS seja bem organizado e comentado
-- [ ] **6.4** Testar a página em diferentes navegadores
-- [ ] **6.5** Fazer commit e push das alterações
-- [ ] **6.6** Verificar se o resultado está visível no GitHub
+- [x] **6.1** Criar uma página HTML completa aplicando todos os conceitos
+- [x] **6.2** Garantir que o código HTML seja válido e semântico
+- [x] **6.3** Garantir que o CSS seja bem organizado e comentado
+- [x] **6.4** Testar a página em diferentes navegadores
+- [x] **6.5** Fazer commit e push das alterações
+- [x] **6.6** Verificar se o resultado está visível no GitHub
 
 ## 📚 Recursos Úteis
 

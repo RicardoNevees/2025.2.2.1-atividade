@@ -186,7 +186,7 @@ a:hover {
     margin-top: 2rem;
     padding: 1.5rem;
     background-color: var(--cor-neutra-clara);
-    border-radius: 80x;
+    border-radius: 80px;
     box-shadow: var(--sombra-card);
 }
 
@@ -378,4 +378,83 @@ a:hover {
 /* gradiente radial complxo (forma e posição)  */
 .grad-radial-complexo {
     background: radial-gradient(ellipse at top left, #FA8BFF 0%, #2BD2FF 50%, #2BFF88 100%);
+}
+
+/* EXERCÍCIO PRÁTICO */
+
+.exercicio-container {
+    padding: 2rem;
+    background-color: var(--cor-neutra-clara);
+    border-radius: 8px;
+    box-shadow: var(--sombra-card);
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.card-exercicio {
+    /* 1. Gradiente de Fundo */
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    
+    /* 2. Layout e Sombra */
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin-top: 1.5rem;
+    /* 3. Cores e Tipografia */
+    color: var(--cor-neutra-clara); 
+    transition: transform 0.3s ease;
+}
+
+.card-exercicio:hover {
+    transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
+}
+
+.card-exercicio h4 {
+    color: var(--cor-neutra-clara);
+    font-size: 1.8rem;
+    font-family: var(--fonte-titulos);
+    margin-bottom: 0.8rem;
+}
+
+/* Estilização do Botão (Ação com Hover) */
+.btn-exercicio {
+    background-color: var(--cor-acento); /* Cor de destaque */
+    color: var(--cor-neutra-clara);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.btn-exercicio:hover {
+    background-color: #c0392b; /* Tom mais escuro no hover */
+}
+
+/* Estilos para o bloco de Dicas */
+.dicas {
+    margin-top: 2rem;
+    text-align: left;
+    background-color: var(--cor-neutra-fundo);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
+}
+
+.dicas h4 {
+    color: var(--cor-primaria);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.dicas ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.dicas li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
 }
