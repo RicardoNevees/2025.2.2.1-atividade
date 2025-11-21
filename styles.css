@@ -1,36 +1,152 @@
+/* CONFIGURAÇÃO GLOBAL E RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Varáveis CSS - aqui são definidas as cores, fontes e espaçamentos globais */
+:root {
+    /* Cores do projeto (Alterações só aqui) */
+    --cor-primaria: #030507;
+    --cor-secundaria: #2ecc71;
+    --cor-terceiaria: #f39c12;
+    --cor-acento: #e74c3c;
+    --cor-neutra-fundo: #f4f4f9;
+    --cor-neutra-texto: #000000;
+    --cor-neutra-clara: #fff;
+
+    /* Tipografia (Alterações só aqui) */
+    --fonte-corpo: 'Roboto', Arial, sans-serif;
+    --fonte-titulos: 'Playfair Display', Georgia, serif;
+    --tamanho-base: 16px;
+
+    /* Espaçamentos e Sombras */
+    --espacament-padrao: 1rem;
+    --sombra-card: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
-    color: black;
-    margin: 0;
-    padding: 40px;
+    font-family: var(--fonte-corpo);
+    font-size: var(--tamanho-base);
+    background-color: var(--cor-neutra-fundo);
+    color: var(--cor-neutra-texto);
     line-height: 1.6;
+    min-height: 100vh;
 }
 
+/* Container centralizador (Manté o conteúdo centralizado e com a largura limitada) */ 
 .container {
-    max-width: 3000%;
+    max-width: 1100px;
+    width: 90%;
     margin: 0 auto;
+    padding: 2rem 0;
 }
 
-.container h1 {
-    text-align: center;
-    color: #636363;
-    margin-bottom: 30px;
-    font-size: 2.5em;
+/* Hierarquias de títulos (h1, h2, h3 e h4) */
+h1, h2, h3, h4 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor-primaria);
+    line-height: 1.2;
+    margin-bottom: var(--espacamento-padrao);
 }
 
 h1 {
-    color: #2c3e50;
-    font-size: 2.5em;
-    border-bottom: 3px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-    display: inline-block;
+    font-size: 2.5rem;
 }
+
+h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--cor-secundaria);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: var(--espacamento-padrao);
+}
+
+/*:hover estiliza <a> quando o cursor do mouse está sobre ele */
+a:hover {
+    color: var(--cor-terceiaria);
+    text-decoration: underline; 
+}
+
+.header-principal {
+    background: linear-gradient(90deg, var(--cor-primaria), #4faeec);
+    color: var(--ccor-neutra-clara);
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: var(--sombra-card);
+}
+
+.header-principal h1 {
+    /* aqui, a cor do h1 será sobreescrita na seção tipografia base apenas no header */
+    color: var(--cor-neutra-clara);
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.footer-principal {
+    background-color: var(--var-neutra-texto);
+    color: var(--cor-neutra-clara);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* ESTILOS PARA: Cards, Grids, Botões ou elementos que aparecem apenas em uma seção */
+.card {
+    background-color: var(--cor-neutra-clara);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra-card);
+    text-align: center;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+/* aplicando cor usando nomes de cor */
+.cor-nome {
+    background-color: blue;
+    color: black;
+}
+
+/* Aplicando cor usando hexadecimal */
+.cor-hex {
+    background-color: #00ff00;
+    color: black;
+}
+
+/* Aplicando cor usando RGB */
+.cor-rgb {
+    background-color: rgb(46, 204, 113);
+    color: var(--cor-neutra-texto);
+}
+
+/* aplicando cor usando RGBA com transparência */
+.cor-rgba {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: var(--cor-neutra-texto);
+}
+
+/* aplicando cor usando HSL */
+.cor-hsl {
+    background-color: HSL(0, 100%, 50%);
+    color: var(--cor-neutra-texto);
+}
+
+
+
+
 
