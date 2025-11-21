@@ -323,3 +323,59 @@ a:hover {
     text-align: center;
     color: var(--cor-neutra-clara);
 }
+
+/* GRADIENTES */
+
+/* Layout para Gradientes */
+.gradientes-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.gradiente-item {
+    min-height: 150px;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: var(--sombra-card);
+    color: var(--cor-neutra-clara);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);  /* essa config faz o texto aparecer */
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;  /* alinha o conteúdo na vertical */
+    flex-direction: column;
+    justify-content: flex-end;   /* coloca o texto na parte de baixo */
+}
+
+/* gradiente linear com 2 cores */
+.grad-linear-2 {
+    background: linear-gradient(to right, #667eea, #764ba2);
+}
+
+/* gradiente linear com 3 cores */
+.grad-linear-3 {
+    background: linear-gradient(to bottom, var(--cor-primaria), var(--cor-acento), var(--cor-terciaria));
+}
+
+/* gradiente linear com 45 graus (diferentes direções) */
+.grad-linear-diagonal {
+    background: linear-gradient(45deg, #FF7F50, #6A5ACD); /* Coral e Slate Blue */
+}
+
+/* gradiente radial */
+.grad-radial {
+    background: radial-gradient(circle, #f093fb, #f5576c);
+}
+
+/* gradiente complexo com múltiplas paradas (color stops)  */
+.grad-complexo {
+    /* Gradiente linear com paradas em porcentagem */
+    background: linear-gradient(135deg, var(--cor-secundaria) 0%, var(--cor-primaria) 30%, var(--cor-terciaria) 70%, #fff 100%);
+    color: var(--cor-neutra-texto);
+}
+
+/* gradiente radial complxo (forma e posição)  */
+.grad-radial-complexo {
+    background: radial-gradient(ellipse at top left, #FA8BFF 0%, #2BD2FF 50%, #2BFF88 100%);
+}
