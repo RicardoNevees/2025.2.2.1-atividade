@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 }
 
 /* Varáveis CSS - aqui são definidas as cores, fontes e espaçamentos globais */
@@ -176,6 +177,64 @@ a:hover {
     border: 1px solid #2e0a0a;
 }
 
+/* TIPOGRAFIA */
+.exemplo-tipografia {
+    /* Layouts para exibir os exemplos lado a lado */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1rf));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--cor-neutra-clara);
+    border-radius: 80x;
+    box-shadow: var(--sombra-card);
+}
+
+.tipo-exemplo {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: var(--sombra-card);
+}
+
+.demostracao-item {
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+/* Aplicando diferentes tamanhos (font-size) */
+.tamanho-px { font-size: 18px; }
+.tamanho-px {font-size: 1.2em; }
+.tamanho-rem { font-size: 1.5rem; }
+.tamanho-perc { font-size: 150%; }
+
+/* Usando font-weight para espessura */
+.peso-light { font-weight: 300; }
+.peso-normal {font-weight: 400; }
+.peso-bold { font-weight: 700; }
+.peso-extra-bold { font-weight: 900; }
+
+/* Aplicando outros estilos tipográficos */
+.estilo-italico {
+    font-style: italic;
+}
+
+.estilo-sublinhado {
+    text-decoration: underline;
+}
+
+.estilo-caixa-alta {
+    text-transform: uppercase;
+}
+
+.estilo-riscado {
+    text-decoration: line-through;
+}
+
+.estilo-nao-decorado {
+    text-decoration: none;   /* útil para links */
+}
 
 
 
